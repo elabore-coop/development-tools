@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_git_issues" parent="project.menu_project_config" sequence="20" name="Git issues" />
+
+    <menuitem id="menu_git_repositories" action="act_git_repositories_list" parent="menu_git_issues" sequence="1" name="Git Repositories" />
+
+    <menuitem id="menu_git_issues_list" action="act_git_issues_list" parent="menu_git_issues" sequence="2" name="Git issues list" />
+
+</odoo>

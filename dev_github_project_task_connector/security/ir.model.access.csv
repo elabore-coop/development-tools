@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_git_issue_user,git.issue.user,dev_github_project_task_connector.model_git_issue,project.group_project_user,1,0,0,0
+access_git_issue_manager,git.issue.manager,dev_github_project_task_connector.model_git_issue,project.group_project_manager,1,1,1,1
+access_git_repo_user,git.repo.user,dev_github_project_task_connector.model_git_repo,project.group_project_user,1,0,0,0
+access_git_repo_manager,git.repo.manager,dev_github_project_task_connector.model_git_repo,project.group_project_manager,1,1,1,1
