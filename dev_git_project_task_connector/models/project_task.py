@@ -25,3 +25,8 @@ class Task(models.Model):
             "res_model": "create.git.issue",
             "target": "new",
         }
+
+    def refresh_issues(self):
+        for record in self:
+            for issue in record.issue_ids:
+                issue.refresh_data()

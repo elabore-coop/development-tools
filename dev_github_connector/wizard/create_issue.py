@@ -24,6 +24,7 @@ class CreateGitIssue(models.TransientModel):
                 title=self.issue_name, body=self.issue_description
             )
             values = {
+                "issue_id": issue.number,
                 "name": issue.title,
                 "platform": self.issue_platform.id,
                 "repo": self.issue_repo.id,

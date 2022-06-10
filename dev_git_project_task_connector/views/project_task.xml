@@ -10,6 +10,7 @@
                 <page name="git_issues" string="Git Issues">
                     <button string="Create an issue" name="create_issue" type="object" class="oe_stat_button" icon="fa-plus-circle" style="margin: 0px 4px 0px 0px" />
                     <button string="Link an issue" name="link_issue" type="object" class="oe_stat_button" icon="fa-link" style="margin: 0px 4px 0px 0px" />
+                    <button string="Refresh" name="refresh_issues" type="object" class="oe_stat_button" icon="fa-refresh" style="margin: 0px 4px 0px 0px" />
                     <separator string="Current linked issues" />
                     <field name="issue_ids" nolabel="1" mode="tree">
                         <tree create="0" delete="1">

@@ -22,6 +22,7 @@ class LinkGitIssue(models.TransientModel):
             repo = github.get_repo(self.issue_repo.displayed_name)
             issue = repo.get_issue(number=self.issue_number)
             values = {
+                "issue_id": issue.number,
                 "name": issue.title,
                 "platform": self.issue_platform.id,
                 "repo": self.issue_repo.id,
