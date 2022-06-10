@@ -5,6 +5,7 @@
         <field name="model">git.repo</field>
         <field name="arch" type="xml">
             <tree editable="bottom">
+                <field name="platform_id" />
                 <field name="owner" />
                 <field name="name" />
                 <field name="displayed_name" readonly="1" />

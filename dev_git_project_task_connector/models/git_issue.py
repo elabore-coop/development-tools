@@ -8,7 +8,10 @@ class GitIssue(models.Model):
     _description = "Issue Git"
 
     name = fields.Char(string="Title", required=True, copy=True)
-    repo = fields.Many2one("git.repo", required=True, copy=True)
+    platform = fields.Many2one("git.platform", string="Git platform", required=True)
+    repo = fields.Many2one(
+        "git.repo", string="Git repository", required=True, copy=True
+    )
     status = fields.Selection(
         [
             ("opened", "Opened"),

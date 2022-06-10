@@ -66,6 +66,7 @@ This module is maintained by ELABORE.
     # always loaded
     "data": [
         "views/res_user.xml",
+        "data/git_platform.xml",
     ],
     # only loaded in demonstration mode
     "demo": [],

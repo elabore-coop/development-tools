@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="github_platform" model="git.platform">
+        <field name="name">Github</field>
+        <field name="tool">github</field>
+        <field name="url">https://github.com</field>
+    </record>
+
+</odoo>

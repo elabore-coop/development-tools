@@ -7,7 +7,8 @@
         <field name="arch" type="xml">
             <form string="create a new Git issue linked to the current task">
                 <group>
-                    <field name="issue_repo" widget="selection" placeholder="Choose the repository of the issue" />
+                    <field name="issue_platform" widget="selection" placeholder="Choose the platform for the issue" />
+                    <field name="issue_repo" domain="[('platform_id', '=', issue_platform)]" widget="selection" placeholder="Choose the repository for the issue" />
                     <field name="issue_name" />
                     <field name="issue_description" />
                 </group>

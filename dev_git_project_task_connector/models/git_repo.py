@@ -7,6 +7,7 @@ class GitRepository(models.Model):
     _name = "git.repo"
     _description = "Repository Git"
 
+    platform_id = fields.Many2one("git.platform", string="Git platform", required=True)
     name = fields.Char(string="Name", required=True)
     owner = fields.Char(string="Owner", required=True)
     displayed_name = fields.Char(
