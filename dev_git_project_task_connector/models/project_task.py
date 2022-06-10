@@ -16,3 +16,12 @@ class Task(models.Model):
             "res_model": "link.git.issue",
             "target": "new",
         }
+
+    def create_issue(self):
+        return {
+            "name": "Create a Git issue",
+            "type": "ir.actions.act_window",
+            "view_mode": "form",
+            "res_model": "create.git.issue",
+            "target": "new",
+        }

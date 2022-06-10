@@ -64,7 +64,9 @@ This module is maintained by ELABORE.
         "python": [],
     },
     # always loaded
-    "data": [],
+    "data": [
+        "views/res_user.xml",
+    ],
     # only loaded in demonstration mode
     "demo": [],
     "js": [],

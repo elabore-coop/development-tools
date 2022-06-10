@@ -7,7 +7,7 @@ class GitRepository(models.Model):
     _name = "git.repo"
     _description = "Repository Git"
 
-    name = fields.Char(string="name", required=True)
+    name = fields.Char(string="Name", required=True)
     owner = fields.Char(string="Owner", required=True)
     displayed_name = fields.Char(
         string="Displayed name", compute="_compute_displayed_name"

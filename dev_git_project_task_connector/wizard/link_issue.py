@@ -10,8 +10,8 @@ class LinkGitIssue(models.TransientModel):
     issue_repo = fields.Many2one("git.repo", string="Repository", required=True)
     issue_number = fields.Integer("Issue number", required=True)
 
+    # Function to inherit in Git platform connector addons
     def _compute_issue_values(self):
-        # Function to inherit in Git platform connector addons
         return {}
 
     def link_issue(self):

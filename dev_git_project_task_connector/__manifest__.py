@@ -70,6 +70,7 @@ This module is maintained by ELABORE.
     "data": [
         "security/ir.model.access.csv",
         "wizard/link_issue.xml",
+        "wizard/create_issue.xml",
         "views/project_task.xml",
         "views/git_issue.xml",
         "views/git_repository.xml",
