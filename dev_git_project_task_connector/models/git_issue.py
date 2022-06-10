@@ -31,3 +31,9 @@ class GitIssue(models.Model):
         raise UserError(
             "A Git platform connector addons must be installed to refresh the issues data."
         )
+
+    @api.model
+    def _cron_refresh_all_issues(self):
+        issues = self.search([])
+        for issue in issues:
+            issue.refresh_data()

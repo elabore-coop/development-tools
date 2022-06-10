@@ -75,6 +75,7 @@ This module is maintained by ELABORE.
         "views/git_issue.xml",
         "views/git_repository.xml",
         "views/menus.xml",
+        "data/git_issue_data.xml",
     ],
     # only loaded in demonstration mode
     "demo": [],
