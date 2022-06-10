@@ -2,7 +2,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 {
-    "name": "Github Project Task Connector",
+    "name": "Git Project Task Connector",
     "version": "12.0.1.0.0",
     "author": "Elabore",
     "maintainer": "False",
@@ -15,16 +15,16 @@
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
 =============================
-Github Project Task Connector
+Git Project Task Connector
 =============================
-This module provides link functionnalities between project tasks and Github issues:
-- a user can create an Github issue from a project task
-- a user can link an existing Github task to a project task
+This module provides link functionnalities between project tasks and Git issues:
+- a user can create an Git issue on a Git platform from a project task
+- a user can link an existing Git issue to a project task
 - the list of issues linked to the task is displayed with the issues' status
 
 Installation
 ============
-Just install Github Project Task Connector, all dependencies will be installed by default.
+Just install Git Project Task Connector, all dependencies will be installed by default.
 
 Known issues / Roadmap
 ======================
