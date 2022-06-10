@@ -2,29 +2,26 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 {
-    "name": "Git Project Task Connector",
+    "name": "Github Odoo Connector",
     "version": "12.0.1.0.0",
     "author": "Elabore",
     "maintainer": "False",
     "website": "False",
     "license": "AGPL-3",
     "category": "False",
-    "summary": "Link project task to Git issues",
+    "summary": "Connect Odoo user to Github user",
     "description": """
    :image: https://img.shields.io/badge/licence-AGPL--3-blue.svg
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
 =============================
-Git Project Task Connector
+Github Odoo Connector
 =============================
-This module provides link functionnalities between project tasks and Git issues:
-- a user can create an Git issue on a Git platform from a project task
-- a user can link an existing Git issue to a project task
-- the list of issues linked to the task is displayed with the issues' status
+This module provides the capacity to link a user to a Gihub account in order to launch actions that need Github identification.
 
 Installation
 ============
-Just install Git Project Task Connector, all dependencies will be installed by default.
+Just install Github Odoo Connector, all dependencies will be installed by default.
 
 Known issues / Roadmap
 ======================
@@ -61,20 +58,13 @@ This module is maintained by ELABORE.
     # any module necessary for this one to work correctly
     "depends": [
         "base",
-        "project",
+        "dev_git_project_task_connector",
     ],
     "external_dependencies": {
         "python": [],
     },
     # always loaded
-    "data": [
-        "security/ir.model.access.csv",
-        "wizard/link_issue.xml",
-        "views/project_task.xml",
-        "views/git_issue.xml",
-        "views/git_repository.xml",
-        "views/menus.xml",
-    ],
+    "data": [],
     # only loaded in demonstration mode
     "demo": [],
     "js": [],

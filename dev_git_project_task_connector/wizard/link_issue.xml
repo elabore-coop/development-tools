@@ -5,7 +5,7 @@
         <field name="name">link_issue.wizard</field>
         <field name="model">link.git.issue</field>
         <field name="arch" type="xml">
-            <form string="Link an existing Github issue to the current task">
+            <form string="Link an existing Git issue to the current task">
                 <group>
                     <field name="issue_repo" widget="selection" placeholder="Choose the repository of the issue" />
                     <field name="issue_number" />
@@ -18,11 +18,4 @@
         </field>
     </record>
 
-    <!-- <record id="action_link_issue" model="ir.actions.act_window">
-        <field name="name">Link Issue</field>
-        <field name="res_model">link.git.issue</field>
-        <field name="view_mode">form</field>
-        <field name="view_id" ref="link_issue_wizard" />
-        <field name="target">new</field>
-    </record> -->
 </odoo>

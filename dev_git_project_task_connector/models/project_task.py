@@ -10,7 +10,7 @@ class Task(models.Model):
 
     def link_issue(self):
         return {
-            "name": "Link a Github issue",
+            "name": "Link a Git issue",
             "type": "ir.actions.act_window",
             "view_mode": "form",
             "res_model": "link.git.issue",
