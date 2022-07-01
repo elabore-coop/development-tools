@@ -18,7 +18,7 @@ class CreateGitIssue(models.TransientModel):
     def _create_git_issue(self):
         values = super(CreateGitIssue, self)._create_git_issue()
         if self.issue_platform.tool == "github":
-            github = Github(self.env.user.github_token)
+            github = Github(self.env.user.company_id.github_token)
             repo = github.get_repo(self.issue_repo.displayed_name)
             issue = repo.create_issue(
                 title=self.issue_name, body=self.issue_description
