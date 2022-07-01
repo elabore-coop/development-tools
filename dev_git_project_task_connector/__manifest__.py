@@ -3,7 +3,7 @@
 
 {
     "name": "Git Project Task Connector",
-    "version": "12.0.1.0.0",
+    "version": "12.0.1.1.0",
     "author": "Elabore",
     "maintainer": "False",
     "website": "False",
@@ -74,6 +74,7 @@ This module is maintained by ELABORE.
         "views/project_task.xml",
         "views/git_issue.xml",
         "views/git_repository.xml",
+        "views/res_config_settings_view.xml",
         "views/menus.xml",
         "data/git_issue_data.xml",
     ],
