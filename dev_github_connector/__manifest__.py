@@ -3,7 +3,7 @@
 
 {
     "name": "Github Odoo Connector",
-    "version": "12.0.1.0.0",
+    "version": "12.0.1.2.0",
     "author": "Elabore",
     "maintainer": "False",
     "website": "False",
@@ -65,7 +65,7 @@ This module is maintained by ELABORE.
     },
     # always loaded
     "data": [
-        "views/res_user.xml",
+        "views/res_config_settings_view.xml",
         "data/git_platform.xml",
     ],
     # only loaded in demonstration mode
