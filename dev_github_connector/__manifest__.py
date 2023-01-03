@@ -3,7 +3,7 @@
 
 {
     "name": "Github Odoo Connector",
-    "version": "12.0.1.2.0",
+    "version": "13.0.1.2.0",
     "author": "Elabore",
     "maintainer": "False",
     "website": "False",
