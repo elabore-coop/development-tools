@@ -3,7 +3,7 @@
 
 {
     "name": "Git Project Task Connector",
-    "version": "12.0.1.1.0",
+    "version": "13.0.1.1.0",
     "author": "Elabore",
     "maintainer": "False",
     "website": "False",

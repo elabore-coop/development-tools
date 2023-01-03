@@ -14,7 +14,6 @@ class GitRepository(models.Model):
         string="Displayed name", compute="_compute_displayed_name"
     )
 
-    @api.multi
     @api.depends("owner", "name")
     def _compute_displayed_name(self):
         for record in self:
