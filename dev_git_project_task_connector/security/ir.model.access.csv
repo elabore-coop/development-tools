@@ -5,3 +5,7 @@ access_git_repo_user,git.repo.user,dev_git_project_task_connector.model_git_repo
 access_git_repo_manager,git.repo.manager,dev_git_project_task_connector.model_git_repo,project.group_project_manager,1,1,1,1
 access_git_platform_user,git.platform.user,dev_git_project_task_connector.model_git_platform,project.group_project_user,1,0,0,0
 access_git_platform_manager,git.platform.manager,dev_git_project_task_connector.model_git_platform,project.group_project_manager,1,1,1,1
+access_create_git_issue_user,create.git.issue.user,dev_git_project_task_connector.model_create_git_issue,project.group_project_user,1,0,0,0
+access_create_git_issue_manager,create.git.issue.manager,dev_git_project_task_connector.model_create_git_issue,project.group_project_manager,1,1,1,1
+access_link_git_issue_user,link.git.issue.user,dev_git_project_task_connector.model_link_git_issue,project.group_project_user,1,0,0,0
+access_link_git_issue_manager,link.git.issue.manager,dev_git_project_task_connector.model_link_git_issue,project.group_project_manager,1,1,1,1

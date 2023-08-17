@@ -14,9 +14,12 @@ class GitRepository(models.Model):
         string="Displayed name", compute="_compute_displayed_name"
     )
 
-    @api.multi
     @api.depends("owner", "name")
     def _compute_displayed_name(self):
         for record in self:
-            if record.name and record.owner:
-                record.displayed_name = record.owner + "/" + record.name
+            displayed_name = []            
+            if record.owner:
+                displayed_name.append(record.owner)
+            if record.name:
+                displayed_name.append(record.name)
+            record.displayed_name = '/'.join(displayed_name)                
